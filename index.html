@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="css/style.css">
+    <script src="js/scripts.js"></script>
+    <title>TICTACTOE</title>
+</head>
+<body onload="loadedPage()">
+    <h1>Tic Tac Toe</h1>
+    <h2 id="playerName" onclick="showPlayer(this)">Player X</h2>
+    <div class="wrapper">
+        <div class="board">
+
+            <div class="row">
+                <div id="0_0" onclick="place(this)"></div>
+                <div id="0_1" onclick="place(this)"></div>
+                <div id="0_2" onclick="place(this)"></div>
+            </div>
+            <div class="row">
+                <div id="1_0" onclick="place(this)"></div>
+                <div id="1_1" onclick="place(this)"></div>
+                <div id="1_2" onclick="place(this)"></div>
+            </div>
+            <div class="row">
+                <div id="2_0" onclick="place(this)"></div>
+                <div id="2_1" onclick="place(this)"></div>
+                <div id="2_2" onclick="place(this)"></div>
+            </div>
+
+        </div>
+    </div>
+    <div id="resultDisplay">RESULT:</div>
+    <div class="scoreCount">
+        <div class="countDiv"><div id="countX">X:</div></div>
+        <div class="countDiv"><div id="countD">DRAW:</div></div>
+        <div class="countDiv"><div id="countO">O:</div></div>
+    </div>
+    <div><button onclick="resetBoard()">RESET</button></div>
+</body>
+</html>
